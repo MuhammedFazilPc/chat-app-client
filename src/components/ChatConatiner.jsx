@@ -5,7 +5,7 @@ import Input from './Input';
 import { getAllMessagesRoute } from '../utils/APIroutes';
 import axios from 'axios'
 import { io } from 'socket.io-client'
-const socket = io ('http://localhost:5000')
+const socket = io ('https://chat-app-server-beta-seven.vercel.app/')
 function ChatContainer({ currentChat, user }) {
     const [currentChatMessages, setcurrentChatMessages] = useState([]);
     const navigate = useNavigate()
