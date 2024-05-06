@@ -27,7 +27,7 @@ function Login() {
     }
     const handleSubmit = async (event) => {
         event.preventDefault();
-
+        console.log("clicked submit button")
         if (handleValidation()) {
             // console.log('in validation', loginRoute)
             const { email, password } = user
