@@ -35,6 +35,8 @@ function Login() {
                 email,
                 password
             });
+            console.log("data send from server is ",data.msg)
+
             if (data.status === false)
                 toast.error(data.msg, toastOptions);
 
